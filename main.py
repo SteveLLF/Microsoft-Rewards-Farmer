@@ -102,6 +102,7 @@ def bannerDisplay():
 
 def setupAccounts() -> dict:
     accountPath = Path(__file__).resolve().parent / "accounts.json"
+    print(accountPath)
     if not accountPath.exists():
         accountPath.write_text(
             json.dumps(
